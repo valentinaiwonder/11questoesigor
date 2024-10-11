@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Pessoa = {
+            nome: "Dolores",
+            idade: 19,
+            email: "doloressalvatore@gmail.com",
+            endereco: "Rua João Cernach, 283",
+            cumprimentar() {
+              alert("Olá, meu nome é" + this.nome)
+            }, 
+        }
+        const Livro = {
+            titulo: "O Morro dos Ventos Uivantes",
+            autor: "Emily Brontë",
+            anoPublicacao: 1847 
+        } // codigo - livro.autor
+
+        function iterandoPessoa() {
+            console.log(Pessoa)
+        }
+
+        const Carro = {
+            marca: "Ford",
+            modelo: "Mustang",
+            proprietario: {
+                nome: "Valentina",
+                idade: 16
+            }
+        } //para acessar a idade o código é Carro.proprietario.idade
+
+
+        const Pessoa2 = {
+            nome: "Marina"
+        }
+
+        function definirPropriedade(objeto, chave, valor) {
+            objeto[chave] = valor
+        }
+
+        definirPropriedade(Pessoa2, "idade", 5)
+
+        
+
+       
+    </script>
+</body>
+</html>
